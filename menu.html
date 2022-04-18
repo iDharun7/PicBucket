@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Menu</title>
+	<link rel="stylesheet" href="menu.css">
+</head>
+<body>
+	<ul class="menu">
+		<div class="toggle"><ion-icon name="add-outline"></ion-icon></div>
+	<li style="--i:0;"><a href="car.html" class="active"><ion-icon name="car-sport-outline"></ion-icon></a></li>
+	<li style="--i:1;"><a href="bike.html"><ion-icon name="bicycle-outline"></ion-icon></a></li>
+	<li style="--i:2;"><a href="nature.html"><ion-icon name="earth-outline"></ion-icon></a></li>
+	<li style="--i:3;"><a href="tech.html"><ion-icon name="desktop-outline"></ion-icon></a></li>
+	</ul>
+	<script>
+		let menuToggle = document.querySelector('.toggle');
+		let menu = document.querySelector('.menu');
+		menuToggle.onclick = function() {
+			menu.classList.toggle('active')
+			menuToggle.classList.toggle('active')
+		}
+	</script>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
